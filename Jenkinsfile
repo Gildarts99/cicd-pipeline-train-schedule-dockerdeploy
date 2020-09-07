@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                echo 'building docker image'
+                echo 'building docker image in its directory'
                 sh 'cd /var/lib/jenkins/workspace/train_schedule_master-66CKD2BQYUPTV6GKTONHHEJPKSM7T2PI72D5DPCNHRV5SHFUIRHA'
                 sh 'docker build -t gildarts99/cicd-pipeline .'
             }
